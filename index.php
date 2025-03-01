@@ -22,6 +22,7 @@ $categories = $conn->query("SELECT DISTINCT category FROM images");
             <li><a href="index.php" class="<?= $current_page === 'index' ? 'active' : '' ?>">Home</a></li>
             <li><a href="admin.php" class="<?= $current_page === 'admin' ? 'active' : '' ?>">Admin</a></li>
         </ul>
+        <img src="Logo/Asset 1.png" alt="Logo" class="logo">
     </nav>
     
     <!-- دکمه‌های فیلتر -->
