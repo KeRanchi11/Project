@@ -286,24 +286,113 @@ select:focus {
 
 
 
+/* استایل فوتر */
 footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 15px 0;
-    position: fixed;
+    padding: 20px 0;
+    position: relative;
     bottom: 0;
     width: 100%;
     font-size: 14px;
+    margin-top: 50px;
 }
 
-.footer-content a {
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* استایل فوتر */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+    margin-top: 50px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+}
+
+/* استایل ستون‌های فوتر */
+.footer-column {
+    flex: 1;
+    padding: 0 15px;
+}
+
+/* ستون سمت چپ: اطلاعات تماس */
+.contact-info {
+    text-align: left;
+}
+
+.contact-info h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #4CAF50;
+}
+
+.contact-info p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+/* ستون وسط: منوی ناوبری */
+.footer-navigation {
+    text-align: center;
+}
+
+.footer-navigation h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #4CAF50;
+}
+
+.footer-navigation ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-navigation ul li {
+    margin: 5px 0;
+}
+
+.footer-navigation ul li a {
     color: #00aced;
     text-decoration: none;
+    transition: color 0.3s;
 }
 
-.footer-content a:hover {
+.footer-navigation ul li a:hover {
+    color: #4CAF50;
     text-decoration: underline;
+}
+
+/* ستون سمت راست: لوگو */
+.footer-logo {
+    text-align: right;
+}
+
+.footer-logo img {
+    height: 80px; /* ارتفاع لوگو در دسکتاپ */
+    width: auto;
 }
 
 
@@ -354,7 +443,44 @@ footer {
         padding: 10px 18px;
         margin: 5px;
     }
+    footer {
+        overflow: hidden; /* جلوگیری از اسکرول افقی */
+    }
+
+    .footer-content {
+        flex-direction: row; /* دو ستون در موبایل */
+        align-items: center;
+        text-align: center;
+        padding: 0 5px; /* کاهش بیشتر padding برای موبایل */
+
+    }
+
+    /* ستون سمت چپ: اطلاعات تماس */
+    .contact-info {
+        flex: 1;
+        text-align: left;
+        padding-right: 5px; /* فاصله کم بین ستون‌ها */
+    }
+
+    /* ستون سمت راست: لوگو */
+    .footer-logo {
+        flex: 0 0 100px; /* عرض ثابت برای لوگو */
+        text-align: right;
+    }
+
+    .footer-logo img {
+        height: 50px; /* کاهش ارتفاع لوگو در موبایل */
+    }
+
+    /* مخفی کردن منوی ناوبری در موبایل */
+    .footer-navigation {
+        display: none;
+    }
+
+
+
 }
+
 
 @media (max-width: 480px) {
     .gallery {
@@ -382,4 +508,7 @@ footer {
         font-size: 13px;
         padding: 8px 14px;
     }
+
+
+
 }

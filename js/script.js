@@ -51,19 +51,5 @@ document.getElementById('togglePassword').addEventListener('click', function() {
 
 
 
-window.onload = function() {
-    console.log("JavaScript Loaded!"); // تست اجرا شدن جاوا اسکریپت
 
-    // چک کردن آیا فوتر از قبل وجود دارد یا نه
-    if (!document.querySelector("footer")) {
-        const footer = document.createElement("footer");
-        footer.innerHTML = `
-            <div class="footer-content">
-                <p>&copy; 2025 Maleki SignMaker. All rights reserved.</p>
-                <p>Designed by <a href="https://yourwebsite.com" target="_blank">Your Name</a></p>
-            </div>
-        `;
-        document.body.appendChild(footer);
-    }
-};
 

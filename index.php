@@ -50,6 +50,34 @@ $categories = $conn->query("SELECT DISTINCT category FROM images");
         <img id="modalImg" class="modal-content">
     </div>
 
+    <!-- فوتر -->
+    <footer>
+        <div class="footer-content">
+            <!-- ستون سمت چپ: اطلاعات تماس -->
+            <div class="footer-column contact-info">
+                <h3>Contact Information</h3>
+                <p>Phone: 021-1234567</p>
+                <p>Email: info@example.com</p>
+            </div>
+
+            <!-- ستون وسط: منوی ناوبری -->
+            <div class="footer-column footer-navigation">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="about.php">About Us</a></li>
+                    <li><a href="services.php">Services</a></li>
+                    <li><a href="contact.php">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- ستون سمت راست: لوگو -->
+            <div class="footer-column footer-logo">
+                <img src="Logo/Asset 1.png" alt="Logo">
+            </div>
+        </div>
+    </footer>
+
     <script src="js/script.js"></script>
 </body>
 </html>

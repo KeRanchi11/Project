@@ -125,6 +125,6 @@ $result = $conn->query("SELECT * FROM images ORDER BY id DESC");
         <a href="admin.php?delete=<?= $row['id'] ?>" class="delete">Delete</a>
     <?php endwhile; ?>
 </div>
-
+        <script src="js/script.js"></script>
 </body>
 </html>
