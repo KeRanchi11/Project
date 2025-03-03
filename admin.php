@@ -81,7 +81,7 @@ if (isset($_GET['delete'])) {
     exit;
 }
 
-$result = $conn->query("SELECT * FROM images");
+$result = $conn->query("SELECT * FROM images ORDER BY id DESC");
 ?>
 
 <!DOCTYPE html>
@@ -101,6 +101,7 @@ $result = $conn->query("SELECT * FROM images");
         <li><a href="admin.php">Admin</a></li>
         <li><a href="logout.php" class="logout-button">Logout</a></li>
     </ul>
+    <img src="Logo/Asset 1.png" alt="Logo" class="logo">
 </nav>
 
 <form method="POST" enctype="multipart/form-data">

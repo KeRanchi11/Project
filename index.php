@@ -1,6 +1,6 @@
 <?php
 include 'db.php';
-$result = $conn->query("SELECT * FROM images");
+$result = $conn->query("SELECT * FROM images ORDER BY id DESC");
 
 // دریافت تمام دسته‌بندی‌های منحصر به فرد از دیتابیس
 $categories = $conn->query("SELECT DISTINCT category FROM images");

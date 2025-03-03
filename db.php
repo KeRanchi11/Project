@@ -1,7 +1,7 @@
 <?php
 // اطلاعات اتصال به دیتابیس
 $host = 'localhost';
-$db   = 'myproject_test_db';
+$db   = 'tablosa4_gallery';
 $user = 'root';
 $pass = '';
 

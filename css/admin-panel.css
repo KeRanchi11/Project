@@ -24,44 +24,52 @@ h1 {
 
 /* استایل ناوبری */
 nav {
-    background-color: #000000; /* رنگ پس‌زمینه تیره */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
     margin-bottom: 30px;
-    padding: 10px 20px; /* فاصله داخلی */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* سایه زیر نوار */
-    position: sticky; /* نوار چسبنده به بالا */
+    padding: 10px 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    position: sticky;
     top: 0;
-    z-index: 1000; /* اطمینان از نمایش بالای سایر عناصر */
+    z-index: 1000;
 }
 
 nav ul {
-    list-style-type: none; /* حذف علامت‌های لیست */
+    list-style-type: none;
     margin: 0;
     padding: 0;
-    display: flex; /* چیدمان افقی */
-    justify-content: flex-start; /* تراز به چپ */
+    display: flex;
+    justify-content: flex-start;
 }
 
 nav ul li {
-    margin-right: 20px; /* فاصله بین آیتم‌ها */
+    margin-right: 20px;
 }
 
 nav ul li a {
-    color: white; /* رنگ متن سفید */
-    text-decoration: none; /* حذف زیرخط */
-    font-size: 18px; /* اندازه فونت */
-    padding: 10px 15px; /* فاصله داخلی لینک‌ها */
-    border-radius: 5px; /* لبه‌های گرد */
-    transition: background-color 0.3s, color 0.3s; /* انیمیشن تغییر رنگ */
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 nav ul li a:hover {
-    background-color: #4CAF50; /* تغییر رنگ پس‌زمینه هنگام hover */
-    color: white; /* تغییر رنگ متن */
+    background-color: #4CAF50;
+    color: white;
 }
 
 nav ul li a.active {
-    background-color: #4CAF50; /* رنگ پس‌زمینه برای لینک فعال */
-    color: white; /* رنگ متن برای لینک فعال */
+    background-color: #4CAF50;
+    color: white;
+}
+
+nav .logo {
+    height: 40px;
+    width: auto;
 }
 
 /* استایل گالری در پنل ادمین */
