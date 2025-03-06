@@ -1,7 +1,13 @@
+@font-face {
+    font-family: 'kalameh';
+    src: url('Font/KalamehWeb-Black.woff2') format('woff2'),
+         url('Font/Kalameh-Black.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
 
 body {
     margin: auto;
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     overflow: auto;
     background: linear-gradient(315deg, rgba(101,0,94,1) 3%, rgba(60,132,206,1) 38%, rgba(48,238,226,1) 68%, rgba(255,25,25,1) 98%);
     animation: gradient 15s ease infinite;
@@ -47,19 +53,22 @@ body {
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
 body {
-    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
   /* background: #dde1e7; */
     color: #ffffff;
     text-align: center;
+    font-family: 'kalameh';
 }
 
 h1 {
+    font-family: 'Poppins';
     font-weight: 600;
     margin: 20px 0;
     font-size: 2.5rem;
 }
+
+
 
 
 /* استایل ناوبری */
@@ -89,6 +98,7 @@ nav ul li {
 }
 
 nav ul li a {
+    font-family: 'kalameh';
     color: white;
     text-decoration: none;
     font-size: 18px;
@@ -336,7 +346,7 @@ footer {
 
 /* استایل فوتر */
 footer {
-    background-color: #333;
+    background-color: #000000;
     color: white;
     text-align: center;
     padding: 20px 0;
@@ -348,6 +358,7 @@ footer {
 }
 
 .footer-content {
+    font-family: 'kalameh';
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -375,8 +386,9 @@ footer {
 }
 
 .contact-info p {
+    font-family: 'kalameh';
     margin: 5px 0;
-    font-size: 14px;
+    font-size: 1rem;
 }
 
 /* ستون وسط: منوی ناوبری */
@@ -401,7 +413,7 @@ footer {
 }
 
 .footer-navigation ul li a {
-    color: #00aced;
+    color: #ffffff;
     text-decoration: none;
     transition: color 0.3s;
 }

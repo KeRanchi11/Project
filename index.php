@@ -9,8 +9,9 @@ $categories = $conn->query("SELECT DISTINCT category FROM images");
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Gallery</title>
+    <title>تابلو سازی ملکی</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -59,8 +60,8 @@ $categories = $conn->query("SELECT DISTINCT category FROM images");
             <!-- ستون سمت چپ: اطلاعات تماس -->
             <div class="footer-column contact-info">
                 <h3>Contact Information</h3>
-                <p>Phone: 021-1234567</p>
-                <p>Email: info@example.com</p>
+                <p><i class="fas fa-phone"></i> 0916778198</p>
+                <p><i class="fas fa-map-marker-alt"></i> خیابان مطهری بین نظامی و شیخ بهایی</p>
             </div>
 
             <!-- ستون وسط: منوی ناوبری -->
@@ -68,9 +69,7 @@ $categories = $conn->query("SELECT DISTINCT category FROM images");
                 <h3>Navigation</h3>
                 <ul>
                     <li><a href="index.php">Home</a></li>
-                    <li><a href="about.php">About Us</a></li>
-                    <li><a href="services.php">Services</a></li>
-                    <li><a href="contact.php">Contact Us</a></li>
+                    <li><a href="admin.php">AdminPanel</a></li>
                 </ul>
             </div>
 
