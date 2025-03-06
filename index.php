@@ -38,8 +38,11 @@ $categories = $conn->query("SELECT DISTINCT category FROM images");
     <!-- گالری عکس‌ها -->
     <div class="gallery">
     <?php while ($row = $result->fetch_assoc()): ?>
-        <div class="image" data-category="<?= $row['category'] ?>">
-            <img src="uploads/<?= $row['filename'] ?>" alt="<?= $row['filename'] ?>" onclick="openModal('<?= $row['filename'] ?>')">
+        <div class="image-container" data-category="<?= $row['category'] ?>">
+            <div class="image">
+                <img src="uploads/<?= $row['filename'] ?>" alt="<?= $row['filename'] ?>" onclick="openModal('<?= $row['filename'] ?>')">
+            </div>
+            <div class="category-name"><?= ucfirst($row['category']) ?></div>
         </div>
     <?php endwhile; ?>
 </div>

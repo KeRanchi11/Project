@@ -112,6 +112,8 @@ nav .logo {
     width: auto;
 }
 
+
+
 .filter-buttons {
     text-align: center;
     margin-bottom: 20px;
@@ -145,6 +147,20 @@ nav .logo {
     max-width: 1200px;
     margin: auto;
 }
+.image-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* سایه نرم برای کادر */
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+.image-container:hover {
+    transform: scale(1.05); /* بزرگ‌نمایی کادر هنگام hover */
+}
 
 .image {
     border-radius: 15px;
@@ -156,7 +172,7 @@ nav .logo {
     justify-content: center;
     background-color: transparent;
     height: 300px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* سایه نرم برای باکس عکس‌ها */
+   /* box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.586);  سایه نرم برای باکس عکس‌ها */
     cursor: pointer;
 }
 
@@ -167,6 +183,16 @@ nav .logo {
     display: block;
     border-radius: 15px;
     transition: 0.3s;
+}
+
+.category-name {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #45a049; /* پس‌زمینه خاکستری روشن برای نام دسته‌بندی */
+    border-radius: 0 0 15px 15px; /* لبه‌های گرد فقط برای پایین کادر */
 }
 
 .image:hover {

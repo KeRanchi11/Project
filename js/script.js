@@ -1,18 +1,20 @@
 
 function filterImages(category) {
-    const images = document.querySelectorAll('.image');
+    const images = document.querySelectorAll('.image-container');
+
     images.forEach(image => {
         if (category === 'all' || image.getAttribute('data-category') === category) {
-            image.style.display = 'flex'; // نمایش عکس
+            image.style.display = 'block'; // نمایش عکس‌های مربوطه
         } else {
-            image.style.display = 'none'; // مخفی کردن عکس
+            image.style.display = 'none'; // مخفی کردن عکس‌های نامرتبط
         }
     });
 
-    // اضافه کردن کلاس active به دکمه انتخاب شده
-    document.querySelectorAll('.filter-buttons button').forEach(button => {
+    // تغییر استایل دکمه فعال
+    const buttons = document.querySelectorAll('.filter-buttons button');
+    buttons.forEach(button => {
         button.classList.remove('active');
-        if (button.textContent.toLowerCase() === category || (category === 'all' && button.textContent === 'All')) {
+        if (button.textContent.toLowerCase() === category || (category === 'all' && button.textContent.toLowerCase() === 'all')) {
             button.classList.add('active');
         }
     });
